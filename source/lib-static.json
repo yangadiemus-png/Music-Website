@@ -1,0 +1,93 @@
+{
+ "site": {
+  "title": "If? ACG in Jazz",
+  "tagline": {
+   "en": "What if your favorite anime, comic and game songs were born in a late-night jazz club?",
+   "zh": "如果你喜欢的动画、漫画与游戏歌曲，诞生在一家深夜爵士酒吧里？"
+  },
+  "about": {
+   "en": "If? ACG in Jazz is a cover project that reimagines ACG songs as jazz — swing, bossa nova, ballads and everything in between.",
+   "zh": "If? ACG in Jazz 是一个翻奏计划：把 ACG 歌曲重新编排成爵士——摇摆、波萨诺瓦、抒情曲，以及介于其间的一切。"
+  },
+  "disclaimer": {
+   "en": "All original songs belong to their respective composers, lyricists and rights holders. These are non-commercial fan covers.",
+   "zh": "所有原曲版权归原作曲、作词及版权方所有。本站作品为非商业性质的爱好者翻奏。"
+  },
+  "links": [],
+  "theme": "gold",
+  "statement": {
+   "en": "Anime, comic & game themes, re-voiced in jazz",
+   "zh": "把动画、漫画与游戏的旋律，重写成爵士"
+  },
+  "custom": {
+   "accent": "#a855f7",
+   "base": "dark"
+  }
+ },
+ "albums": [
+  {
+   "id": "demovol1",
+   "title": {
+    "en": "Vol. 1 — Midnight Signal (Demo)",
+    "zh": "第一辑 · 午夜信号（示例）"
+   },
+   "artist": "If?",
+   "year": "2026",
+   "cover": "",
+   "description": {
+    "en": "A demo album so you can see the layout. Replace or delete it in Edit.",
+    "zh": "示例专辑，用来预览版面效果。可在“编辑”中替换或删除。"
+   },
+   "tracks": [
+    {
+     "id": "hikarunara",
+     "title": {
+      "en": "Hikaru Nara (Jazz ver.)",
+      "zh": "光るなら（爵士版）"
+     },
+     "original": {
+      "en": "Your Lie in April — OP1",
+      "zh": "《四月是你的谎言》OP1"
+     },
+     "originalArtist": "Goose house",
+     "duration": 0,
+     "audio": "",
+     "audioName": "",
+     "about": {
+      "en": "Example notes: arrangement ideas, recording story, instruments used… This is what opens when a listener clicks the song.",
+      "zh": "示例介绍：编曲思路、录音故事、使用的乐器……听众点击歌曲时会打开这里。"
+     },
+     "credits": {
+      "en": "Arrangement: If?",
+      "zh": "编曲：If?"
+     },
+     "lyrics": ""
+    },
+    {
+     "id": "godknows",
+     "title": {
+      "en": "God knows... (Swing ver.)",
+      "zh": "God knows...（摇摆版）"
+     },
+     "original": {
+      "en": "The Melancholy of Haruhi Suzumiya — Insert song",
+      "zh": "《凉宫春日的忧郁》插曲"
+     },
+     "originalArtist": "Aya Hirano",
+     "duration": 0,
+     "audio": "",
+     "audioName": "",
+     "about": {
+      "en": "",
+      "zh": ""
+     },
+     "credits": {
+      "en": "",
+      "zh": ""
+     },
+     "lyrics": ""
+    }
+   ]
+  }
+ ]
+}

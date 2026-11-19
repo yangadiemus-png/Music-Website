@@ -1,0 +1,58 @@
+<svg class="instr planet-art" viewBox="0 0 640 560" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <radialGradient id="pl-body" cx=".36" cy=".3" r=".78">
+      <stop offset="0" style="stop-color:var(--m1)"/><stop offset=".22" style="stop-color:var(--m2)"/>
+      <stop offset=".62" style="stop-color:var(--m3)"/><stop offset="1" stop-color="#000"/>
+    </radialGradient>
+    <radialGradient id="pl-shade" cx=".72" cy=".78" r=".75"><stop offset="0" stop-color="#000" stop-opacity=".75"/><stop offset=".6" stop-color="#000" stop-opacity="0"/></radialGradient>
+    <radialGradient id="pl-atmo" r=".5"><stop offset=".78" style="stop-color:var(--m2)" stop-opacity="0"/><stop offset=".86" style="stop-color:var(--m1)" stop-opacity=".45"/><stop offset="1" style="stop-color:var(--m2)" stop-opacity="0"/></radialGradient>
+    <linearGradient id="pl-ring" x1="0" x2="1"><stop offset="0" style="stop-color:var(--m2)" stop-opacity=".15"/><stop offset=".5" style="stop-color:var(--m1)"/><stop offset="1" style="stop-color:var(--m2)" stop-opacity=".15"/></linearGradient>
+    <clipPath id="pl-clip"><circle cx="0" cy="0" r="112"/></clipPath>
+    <filter id="pl-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+  </defs>
+  <g fill="none" style="stroke:var(--line-strong)">
+    <circle cx="320" cy="280" r="246" stroke-width="1"/>
+    <circle cx="320" cy="280" r="196" stroke-width="1" stroke-dasharray="2 7"/>
+  </g>
+  <g transform="translate(320 280)">
+    <!-- far orbit with moon -->
+    <g transform="rotate(-14)">
+      <ellipse rx="292" ry="92" fill="none" style="stroke:var(--line-strong)" stroke-width="1"/>
+      <circle r="5" style="fill:var(--m1)"><animateMotion dur="26s" repeatCount="indefinite" path="M 292 0 A 292 92 0 1 1 -292 0 A 292 92 0 1 1 292 0"/></circle>
+    </g>
+    <g transform="rotate(32)">
+      <ellipse rx="236" ry="60" fill="none" style="stroke:var(--line-strong)" stroke-width=".8" stroke-dasharray="3 6"/>
+      <circle r="3.2" style="fill:var(--m1)"><animateMotion dur="17s" repeatCount="indefinite" path="M -236 0 A 236 60 0 1 0 236 0 A 236 60 0 1 0 -236 0"/></circle>
+    </g>
+    <circle r="150" style="fill:var(--accent)" opacity=".35" filter="url(#pl-blur)"/>
+    <!-- ring: back half -->
+    <g transform="rotate(-16)">
+      <path d="M -214 0 A 214 44 0 0 1 214 0" fill="none" stroke="url(#pl-ring)" stroke-width="10" opacity=".35"/>
+      <path d="M -186 0 A 186 37 0 0 1 186 0" fill="none" stroke="url(#pl-ring)" stroke-width="4" opacity=".55"/>
+      <path d="M -168 0 A 168 33 0 0 1 168 0" fill="none" stroke="url(#pl-ring)" stroke-width="1.4" opacity=".8"/>
+    </g>
+    <!-- planet -->
+    <circle r="132" fill="url(#pl-atmo)"/>
+    <circle r="112" fill="url(#pl-body)"/>
+    <g clip-path="url(#pl-clip)" fill="none" style="stroke:var(--m1)" stroke-width=".7">
+      <g opacity=".28" transform="rotate(-20)">
+        <ellipse rx="112" ry="14"/><ellipse rx="112" ry="40" /><ellipse rx="112" ry="68"/><ellipse rx="112" ry="94"/>
+        <ellipse rx="20" ry="112"/><ellipse rx="54" ry="112"/><ellipse rx="86" ry="112"/>
+      </g>
+      <g opacity=".22" transform="rotate(-20)">
+        <line x1="-112" x2="112" y1="-60" y2="-60"/><line x1="-112" x2="112" y1="0" y2="0"/><line x1="-112" x2="112" y1="60" y2="60"/>
+      </g>
+    </g>
+    <circle r="112" fill="url(#pl-shade)"/>
+    <circle r="112" fill="none" style="stroke:var(--m1)" stroke-opacity=".5" stroke-width="1"/>
+    <!-- ring: front half -->
+    <g transform="rotate(-16)">
+      <path d="M -214 0 A 214 44 0 0 0 214 0" fill="none" stroke="url(#pl-ring)" stroke-width="10" opacity=".45"/>
+      <path d="M -186 0 A 186 37 0 0 0 186 0" fill="none" stroke="url(#pl-ring)" stroke-width="4" opacity=".75"/>
+      <path d="M -168 0 A 168 33 0 0 0 168 0" fill="none" stroke="url(#pl-ring)" stroke-width="1.4"/>
+    </g>
+  </g>
+  <g style="fill:var(--m1)">
+    <circle cx="520" cy="118" r="2.4"/><circle cx="128" cy="430" r="1.8"/><circle cx="486" cy="476" r="1.6"/><circle cx="150" cy="120" r="1.4"/><circle cx="560" cy="330" r="1.2"/>
+  </g>
+</svg>
